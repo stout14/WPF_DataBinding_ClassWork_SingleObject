@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:WPF_DataBinding_ClassWork_SingleObject"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+    <StackPanel>
+        <TextBlock Text="{Binding Name}" />
+        <TextBlock Text="{Binding Age}" />
+        <Button Content="Button" Click="button_click"/>
+    </StackPanel>
 </Window>

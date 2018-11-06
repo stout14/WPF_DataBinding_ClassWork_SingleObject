@@ -20,9 +20,18 @@ namespace WPF_DataBinding_ClassWork_SingleObject
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Pereson _person;
+
         public MainWindow()
         {
             InitializeComponent();
+            _person = new Pereson { Name = "Bart", Age = 10 };
+            DataContext = _person;
+        }
+
+        private void button_click(object sender, RoutedEventArgs e)
+        {
+            _person.Age++;
         }
     }
 }
